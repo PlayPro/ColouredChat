@@ -1,0 +1,23 @@
+name: ColouredChat
+main: com.playpro.colouredchat.ColouredChat
+version: 1.0.1
+website: http://www.playpro.com
+author: Intelli
+description: >
+             Enables users to use colours in the chat.
+commands:
+  colours:
+    description: Displays available colour codes.
+    usage: |
+  colors:
+    description: Displays available colour codes.
+    usage: |
+permissions:
+    colouredchat.*:
+        description: Gives access to all ColouredChat commands
+        default: true
+        children:
+            colouredchat.allow: true
+    colouredchat.allow:
+        description: Has permissions to use coloured chat.
+        default: true
